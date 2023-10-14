@@ -15,7 +15,11 @@ This is a To Do List application written in laravel it's very simple and easy to
 - php artisan migrate
 - php artisan serve go to your browser and open 127.0.0.1:8000
 
-
+## Requirements
+- PHP
+- composer
+- mysql
+ 
 ## Screenshots
 
 
