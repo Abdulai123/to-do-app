@@ -22,9 +22,9 @@ This is a To Do List application written in laravel it's very simple and easy to
  
 ## Screenshots
 
-![Home page ](https://github.com/Abdulai123/to-do-app/assets/95375134/c7a1bf58-285b-4f59-a64c-20af76c6a158)
-![Add page ](https://github.com/Abdulai123/to-do-app/assets/95375134/31da3adc-f5a8-49a9-8619-76c94dd39c17)
-![Edit page ](https://github.com/Abdulai123/to-do-app/assets/95375134/41c6d0c0-e6db-48d9-8dd7-04dad6d00bdc)
+![Home page](https://github.com/Abdulai123/to-do-app/assets/95375134/70765947-a852-44f9-8dc0-12ab79bbc982)
+![Edit page](https://github.com/Abdulai123/to-do-app/assets/95375134/5040e17b-ad0a-4d34-931b-c396d782b1db)
+![Add page](https://github.com/Abdulai123/to-do-app/assets/95375134/e88cef62-a95c-4f82-a5f2-f0d45234074d)
 
 ## Contributing
 
