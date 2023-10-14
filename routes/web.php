@@ -32,5 +32,5 @@ Route::get('/edit/{task}', [tasksController::class, 'updateTask']);
 
 Route::PUT('/edit/{task}', [tasksController::class, 'update']);
 
-Route::delete('/delete/{id}', [TaskController::class, 'destroy']);
+Route::delete('/delete/{id}', [tasksController::class, 'deleteTask']);
 

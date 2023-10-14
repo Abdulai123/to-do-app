@@ -15,11 +15,15 @@
             <h1>Add A To Do List</h1>
         </div>
         <div>
-            <form action="/" method="post">
+            <form action="/" method="post" class="form">
                 @csrf
-
+                <span>Name</span>
                 <input type="text" name="name" placeholder="Task Name" required>
 
+                <span>Descriptions</span>
+                <input type="text" name="descriptions" placeholder="Task Descriptions...">
+                
+                <span>Priority</span>
                 <select name="priority" id="" required>
                     <option value="">---Select Priority---</option>
                     <option value="low">Low</option>
@@ -27,9 +31,13 @@
                     <option value="high">High</option>
                 </select>
 
+                <span>Due Date</span>
                 <input type="date" name="date" placeholder="Date">
-                <input type="text" name="descriptions" placeholder="Task Descriptions...">
+
                 <input type="submit" value="Create">
+                <div style="text-align: center; margin-top: 10px;">
+                    <a href="{{URL::previous()}}" style="">Previous</a>
+                </div>
             </form>
         </div>
     </div>

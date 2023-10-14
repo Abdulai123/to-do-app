@@ -24,7 +24,8 @@ class tasksController extends Controller
 
         $add_task = Task::create($inputs);
 
-        return Redirect('/');
+        $success = "TAsk create successfully";
+        return Redirect('/', ['success' => $success]);
     }
 
         
@@ -60,18 +61,8 @@ class tasksController extends Controller
     return Redirect('/')->with('success', 'Task updated successfully!');
     }
 
-    public function destroy($id)
-{
-    // Find the task by ID
-    $task = Task::find($id);
-
-    // If the task is found, delete it
-    if ($task) {
-        $task->delete();
-        return redirect('/')->with('success', 'Task deleted successfully!');
-    } else {
-        // If the task is not found, redirect with an error message
-        return redirect('/')->with('error', 'Task not found!');
+    public function deleteTask(Task $task){
+    $task->delete();
+    return Redirect('/');
     }
-}
 }

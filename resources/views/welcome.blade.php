@@ -53,9 +53,11 @@
                                         src="{{ @asset('storage/icons/edit_square.png') }}" alt="edit"
                                         srcset=""></a>
 
-                                <a href="/delete/{{ $item['id'] }}"><img
-                                        src="{{ @asset('storage/icons/delete.png') }}" alt="delete"
-                                        srcset=""></a>
+                                        <form action="/delete/{{ $item['id'] }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit"><img src="{{ @asset('storage/icons/delete.png') }}" alt="delete"srcset=""></button>
+                                        </form>
                             </td>
                         </tr>
                     @endforeach
