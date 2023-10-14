@@ -24,8 +24,10 @@ class tasksController extends Controller
 
         $add_task = Task::create($inputs);
 
-        $success = "TAsk create successfully";
-        return Redirect('/', ['success' => $success]);
+        if ($add_task) {
+            # code...
+            return Redirect('/');
+        }
     }
 
         
